@@ -6,7 +6,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <nav>
+          <h1>Enlaces</h1>
+          <a href="/about">Acerca de nosotros</a>
+        </nav>
+        {children}
+      </body>
       {/* para que reconozca todas las rutas desde aqui */}
     </html>
   );
